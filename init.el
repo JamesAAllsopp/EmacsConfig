@@ -143,3 +143,4 @@
 (modus-themes-select 'modus-vivendi) ;; OR modus-operandi
 
 (load "~/.emacs.d/settings/python-settings.el")
+(load "~/.emacs.d/settings/font-settings.el")
