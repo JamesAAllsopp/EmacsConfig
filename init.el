@@ -144,3 +144,4 @@
 
 (load "~/.emacs.d/settings/python-settings.el")
 (load "~/.emacs.d/settings/font-settings.el")
+(load "~/.emacs.d/settings/backups-settings.el")
