@@ -147,3 +147,5 @@
 (load "~/.emacs.d/settings/font-settings.el")
 (load "~/.emacs.d/settings/backups-settings.el")
 (load "~/.emacs.d/settings/centaur-tabs.el")
+(load "~/.emacs.d/settings/additional-org-mode.el")
+(load "~/.emacs.d/settings/org-roam.el")
