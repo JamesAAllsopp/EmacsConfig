@@ -94,7 +94,7 @@
            prog-mode
            text-mode) . auto-fill-mode)
          (auto-fill-function . do-auto-fill)
-         (before-save . delete-trailing-whitespace) ;; https://emacs.stackexchange.com/a/40773/10100
+;         (before-save . delete-trailing-whitespace) ;; https://emacs.stackexchange.com/a/40773/10100
          (prog-mode-hook . highlight-indent-guides-mode)
          )
 
