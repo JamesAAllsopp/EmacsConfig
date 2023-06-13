@@ -149,3 +149,4 @@
 (load "~/.emacs.d/settings/centaur-tabs.el")
 (load "~/.emacs.d/settings/additional-org-mode.el")
 (load "~/.emacs.d/settings/org-roam.el")
+(load "~/.emacs.d/settings/mermaid-mode.el")
