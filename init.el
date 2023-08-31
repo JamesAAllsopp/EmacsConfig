@@ -24,7 +24,7 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files '("~/.org/home_jobs.org"))
  '(package-selected-packages
-   '(centaur-tabs magit ein numpydoc flymake-ruff blacken python-pytest pyvenv modus-themes helpful which-key use-package spacegray-theme org-superstar org-roam-bibtex org-ref org-appear olivetti mixed-pitch helm-bibtex deft company-posframe)))
+   '(nlinum centaur-tabs magit ein numpydoc flymake-ruff blacken python-pytest pyvenv modus-themes helpful which-key use-package spacegray-theme org-superstar org-roam-bibtex org-ref org-appear olivetti mixed-pitch helm-bibtex deft company-posframe)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -46,7 +46,7 @@
          (tool-bar-mode -1)
          (scroll-bar-mode -1)
          (menu-bar-mode 1)
-         (global-linum-mode t)
+         ;;(global-linum-mode t) Doesn't work in 29.1
          (global-hl-line-mode 1)
          (savehist-mode 1)
          (recentf-mode 1)
