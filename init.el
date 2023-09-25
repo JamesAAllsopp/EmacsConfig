@@ -1,5 +1,13 @@
 (package-initialize)
 (require 'package)
+;; SETUP use-package, will install if not already present
+;;   https://ianyepan.github.io/posts/setting-up-use-package/
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(eval-and-compile
+  (setq use-package-always-ensure t
+        use-package-expand-minimally t))
 
 ;; Adding repositories along with priority https://emacs.stackexchange.com/a/2989/10100
 (setq package-archives
@@ -24,7 +32,8 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files '("~/.org/home_jobs.org"))
  '(package-selected-packages
-   '(tramp org-roam-ui nlinum centaur-tabs magit ein numpydoc flymake-ruff blacken python-pytest pyvenv modus-themes helpful which-key use-package spacegray-theme org-superstar org-roam-bibtex org-ref org-appear olivetti mixed-pitch helm-bibtex deft company-posframe)))
+   '(tramp yaml-mode org-roam org-roam-ui nlinum centaur-tabs magit ein numpydoc flymake-ruff blacken python-pytest pyvenv modus-themes helpful which-key use-package spacegray-theme org-superstar org-roam-bibtex org-ref org-appear olivetti mixed-pitch helm-bibtex deft company-posframe)))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -32,12 +41,6 @@
  ;; If there is more than one, they won't work right.
  )
 
-(unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
-(eval-and-compile
-  (setq use-package-always-ensure t
-        use-package-expand-minimally t))
 
 ;; BASIC CUSTOMISATION
 ;; --------------------------------------
