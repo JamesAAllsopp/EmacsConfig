@@ -58,6 +58,7 @@
          :config
          ;; Add local lisp for miscellaneous things
          (add-to-list 'load-path "~/.config/emacs/lisp/") ; Local LISP
+         (setq column-number-mode t)
          (setq inhibit-startup-message t)    ; hide the startup message
          (setq global-visual-line-mode t)    ; Visual line wrap
          (setq inhibit-startup-screen t)     ; Disable startup screen
