@@ -12,4 +12,4 @@
 ;; set frame font when running emacs normally
 (when (member "Iosevka" (font-family-list))
   (progn
-    (set-frame-font "Iosevka-12" nil t)))
+    (set-frame-font "Iosevka-10" nil t)))

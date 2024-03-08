@@ -156,3 +156,4 @@
 (load "~/.emacs.d/settings/org-roam.el")
 (load "~/.emacs.d/settings/mermaid-mode.el")
 (load "~/.emacs.d/settings/numpydoc.el")
+(load "~/.emacs.d/settings/lsp.el")
