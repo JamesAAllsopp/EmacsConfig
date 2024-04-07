@@ -24,7 +24,7 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files '("~/org-agenda/"))
  '(package-selected-packages
-   '(follow-mode lsp-mode tramp yaml-mode org-roam org-roam-ui nlinum centaur-tabs magit ein numpydoc flymake-ruff blacken python-pytest pyvenv modus-themes helpful which-key use-package spacegray-theme org-superstar org-roam-bibtex org-ref org-appear olivetti mixed-pitch helm-bibtex deft company-posframe)))
+   '(terraform-mode follow-mode lsp-mode tramp yaml-mode org-roam org-roam-ui nlinum centaur-tabs magit ein numpydoc flymake-ruff blacken python-pytest pyvenv modus-themes helpful which-key use-package spacegray-theme org-superstar org-roam-bibtex org-ref org-appear olivetti mixed-pitch helm-bibtex deft company-posframe)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -145,6 +145,24 @@
          :config
              :bind
              ("<f12>" . modus-themes-toggle))
+
+(use-package terraform-mode
+  ;; if using straight
+  ;; :straight t
+
+  ;; if using package.el
+  ;; :ensure t
+  :custom (terraform-indent-level 2)
+  :config
+  (defun my-terraform-mode-init ()
+    ;; if you want to use outline-minor-mode
+    ;; (outline-minor-mode 1)
+    )
+
+  (add-hook 'terraform-mode-hook 'my-terraform-mode-init))
+
+(use-package rainbow-delimiters)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
 (modus-themes-select 'modus-vivendi) ;; OR modus-operandi
 
