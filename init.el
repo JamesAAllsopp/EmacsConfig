@@ -24,7 +24,7 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files '("~/org-agenda/"))
  '(package-selected-packages
-   '(terraform-mode follow-mode lsp-mode tramp yaml-mode org-roam org-roam-ui nlinum centaur-tabs magit ein numpydoc flymake-ruff blacken python-pytest pyvenv modus-themes helpful which-key use-package spacegray-theme org-superstar org-roam-bibtex org-ref org-appear olivetti mixed-pitch helm-bibtex deft company-posframe)))
+   '(mermaid-mode tramp yaml-mode org-roam org-roam-ui nlinum centaur-tabs magit ein numpydoc flymake-ruff blacken python-pytest pyvenv modus-themes helpful which-key use-package spacegray-theme org-superstar org-roam-bibtex org-ref org-appear olivetti mixed-pitch helm-bibtex deft company-posframe)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
