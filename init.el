@@ -24,7 +24,7 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files '("~/org-agenda/"))
  '(package-selected-packages
-   '(org-pomodoro lsp-mode mermaid-mode tramp yaml-mode org-roam org-roam-ui nlinum centaur-tabs magit ein numpydoc flymake-ruff blacken python-pytest pyvenv modus-themes helpful which-key use-package spacegray-theme org-superstar org-roam-bibtex org-ref org-appear olivetti mixed-pitch helm-bibtex deft company-posframe)))
+   '(org-pomodoro mermaid-mode list-utils atom-one-dark-theme terraform-mode follow-mode lsp-mode tramp yaml-mode org-roam org-roam-ui nlinum centaur-tabs magit ein numpydoc flymake-ruff blacken python-pytest pyvenv modus-themes helpful which-key use-package spacegray-theme org-superstar org-roam-bibtex org-ref org-appear olivetti mixed-pitch helm-bibtex deft company-posframe)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -163,9 +163,17 @@
 
 (use-package rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+(use-package atom-one-dark-theme
+  :init
+  (load-theme 'atom-one-dark t))
 
 
+<<<<<<< HEAD
 (modus-themes-select 'modus-vivendi) ;; OR modus-operandi
+=======
+;;(modus-themes-select 'modus-vivendi) ;; OR modus-operandi
+;;(modus-themes-select 'modus-operandi) God no!
+>>>>>>> 4c72de6 (Magit changes)
 
 (load "~/.emacs.d/settings/python-settings.el")
 (load "~/.emacs.d/settings/font-settings.el")
