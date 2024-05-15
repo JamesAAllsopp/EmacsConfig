@@ -168,12 +168,8 @@
   (load-theme 'atom-one-dark t))
 
 
-<<<<<<< HEAD
-(modus-themes-select 'modus-vivendi) ;; OR modus-operandi
-=======
 ;;(modus-themes-select 'modus-vivendi) ;; OR modus-operandi
 ;;(modus-themes-select 'modus-operandi) God no!
->>>>>>> 4c72de6 (Magit changes)
 
 (load "~/.emacs.d/settings/python-settings.el")
 (load "~/.emacs.d/settings/font-settings.el")
