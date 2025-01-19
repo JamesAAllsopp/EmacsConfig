@@ -1,0 +1,32 @@
+[user]
+	email = jamesaallsopp@googlemail.com
+	name = James Allsopp
+[pull]
+	rebase = true
+[push]
+	default = simple
+	autoSetupRemote = true
+[credential]
+    helper = cache
+[pack]
+    window = 0
+    windowMemory = 100m
+    packSizeLimit = 100m
+    threads = 1
+[color]
+    ui = auto
+[github]
+    user = EthicsGradient
+[gitlab]
+    user = allsoppj
+[init]
+    defaultBranch = main
+[diff]
+    external = difft
+    tool = difftastic
+[difftool]
+    prompt = false
+[difftool "difftastic"]
+    cmd = difft "$LOCAL" "$REMOTE"
+[alias]
+    dft = difftool
