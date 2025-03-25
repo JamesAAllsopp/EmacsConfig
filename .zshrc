@@ -2,6 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export EDITOR="emacs"
 
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+export WORKON_HOME="~/virtual_environments"
 export PASSWORD_STORE_X_SELECTION=primary
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
